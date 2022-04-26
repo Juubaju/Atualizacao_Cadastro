@@ -1,17 +1,9 @@
     <?php
-    require_once("2.php");
+    include("pessoa.class.php");
 
-    class Resultado{
-        private $nome;
-        private $email;
+    $pessoa = new Pessoa();
 
-       public function _construct(){
-           $cadastro = new Cadastro();
-           $cadastro->setNome($_POST["nome"]);
-           $cadastro->setEmail($_POST["email"]);
-
-           echo $cadastro->getNome() . "br" . $cadastro->getEmail();
-
-           }
-    }
+    $pessoa->setNome($_GET ['txtNome']);
+    echo "Nome: " . $pessoa->getNome();
+    
     ?>

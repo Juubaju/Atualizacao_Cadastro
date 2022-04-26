@@ -1,8 +1,11 @@
 <?php 
 
-class cadastro{
+class Pessoa{
+
     private $nome;
-    private $email;
+    private $endereco;
+    private $bairro;
+    private $cep;
 
     public function setNome($nome){
         $this->nome = $nome;
@@ -10,11 +13,23 @@ class cadastro{
     public function getNome(){
         return $this->nome; 
     }
-    public function setEmail($email){
-        $this->email = $email;
+    public function setEndereco($endereco){
+        $this->endereco = $endereco;
     }
-    public function getEmail (){
-        return $this->email;
+    public function getEndereco (){
+        return $this->endereco;
+    }
+    public function setBairro($bairro){
+        $this->bairro;
+    } 
+    public function getBairro(){
+        return $this->bairro;
+    }
+    public function setCep($cep){
+        $this->cep = $cep;
+    }
+    public function getCep(){
+        return $this->cep;
     }
 }    
 
